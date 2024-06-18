@@ -3,3 +3,5 @@ res://scenes/Level1.tscn
 res://scenes/Icon.gd
 res://scenes/tux.gd
 res://scenes/Block.tscn
+res://scenes/fish.tscn
+res://scenes/fish.gd

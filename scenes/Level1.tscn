@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://bbt37or7ttj8t"]
+[gd_scene load_steps=8 format=3 uid="uid://bbt37or7ttj8t"]
 
 [ext_resource type="PackedScene" uid="uid://b3x3kjmtlnud6" path="res://scenes/Block.tscn" id="1"]
 [ext_resource type="PackedScene" uid="uid://b248b6c0l0krn" path="res://scenes/tux.tscn" id="2_bi6wm"]
 [ext_resource type="Texture2D" uid="uid://jgp8lqffp4hy" path="res://icon.png" id="3_qqv7a"]
 [ext_resource type="Script" path="res://scenes/Icon.gd" id="4_0dsa0"]
+[ext_resource type="PackedScene" uid="uid://xxfwyro6hjqd" path="res://scenes/fish.tscn" id="5_nm5ji"]
 
 [sub_resource type="BoxMesh" id="1"]
 size = Vector3(10, 0.5, 10)
@@ -57,3 +58,6 @@ transform = Transform3D(-0.0797952, -0.886872, 0.455072, 0.919082, 0.111281, 0.3
 transform = Transform3D(0.710099, 0, -0.704102, 0, 1, 0, 0.704102, 0, 0.710099, 2.99254, 0.307575, 3.49756)
 texture = ExtResource("3_qqv7a")
 script = ExtResource("4_0dsa0")
+
+[node name="Fish1" parent="." instance=ExtResource("5_nm5ji")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.22975, 1.08803, 3.0907)
