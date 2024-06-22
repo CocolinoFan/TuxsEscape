@@ -20,9 +20,6 @@ size = Vector3(10, 0.5, 10)
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource("1_u673u")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.9355, 0.353328, 0, -0.353328, 0.9355, 0, 2.08386, 7.15546)
-
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.93251, -0.361115, 0.00455019, -0.0372086, -0.0835365, 0.99581, -0.359222, -0.928772, -0.0913352, 3.2587, 3.43515, -0.122343)
 shadow_enabled = true

@@ -5,3 +5,4 @@ res://scenes/tux.tscn
 res://scenes/Block.tscn
 res://Resources/Level1_Environment.tres
 res://scenes/soap.gd
+res://scenes/tux.gd

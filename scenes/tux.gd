@@ -9,6 +9,7 @@ var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 
 
 func _physics_process(delta):
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta
@@ -29,5 +30,8 @@ func _physics_process(delta):
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
-
+	
+	#Make camera controller match the position of the character movement
+	$Camera_Controller.position = lerp($Camera_Controller.position, position, 0.15)
+	
 #Remeber to credit Larry lewing@isc.tamu.edu for makeing the tux image
