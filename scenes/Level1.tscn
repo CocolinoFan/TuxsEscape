@@ -1,41 +1,29 @@
-[gd_scene load_steps=8 format=3 uid="uid://bbt37or7ttj8t"]
+[gd_scene load_steps=6 format=3 uid="uid://bbt37or7ttj8t"]
 
 [ext_resource type="PackedScene" uid="uid://b3x3kjmtlnud6" path="res://scenes/Block.tscn" id="1"]
 [ext_resource type="Environment" uid="uid://c7brr2x8uxxse" path="res://Resources/Level1_Environment.tres" id="1_u673u"]
 [ext_resource type="PackedScene" uid="uid://b248b6c0l0krn" path="res://scenes/tux.tscn" id="2_bi6wm"]
+[ext_resource type="MeshLibrary" uid="uid://bddad7n2likmc" path="res://Resources/world-blocks-v1.tres" id="2_m1u6n"]
 [ext_resource type="PackedScene" uid="uid://xxfwyro6hjqd" path="res://scenes/soap.tscn" id="5_nm5ji"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kyapc"]
-albedo_color = Color(0.202333, 0.357301, 0.550393, 1)
-
-[sub_resource type="BoxMesh" id="1"]
-material = SubResource("StandardMaterial3D_kyapc")
-size = Vector3(10, 0.5, 10)
-
-[sub_resource type="BoxShape3D" id="2"]
-size = Vector3(10, 0.5, 10)
 
 [node name="Level1" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = ExtResource("1_u673u")
 
+[node name="GridMap" type="GridMap" parent="."]
+mesh_library = ExtResource("2_m1u6n")
+data = {
+"cells": PackedInt32Array(-3, 65533, 0, -3, 65534, 0, -3, 65535, 0, -3, 0, 0, -3, 1, 0, -3, 2, 0, -2, 65533, 0, -2, 65534, 0, -2, 65535, 0, -2, 0, 0, -2, 1, 0, -2, 2, 0, -1, 65533, 0, -1, 65534, 0, -1, 65535, 0, -1, 0, 0, -1, 1, 0, -1, 2, 0, -65536, 65533, 0, -65536, 65534, 0, -65536, 65535, 0, -65536, 0, 0, -65536, 1, 0, -65536, 2, 0, -65535, 65533, 0, -65535, 65534, 0, -65535, 65535, 0, -65535, 0, 0, -65535, 1, 0, -65535, 2, 0, -65534, 65533, 0, -65534, 65534, 0, -65534, 65535, 0, -65534, 0, 0, -65534, 1, 0, -65534, 2, 0, -4, 65534, 5, -4, 65535, 5, -4, 0, 5, -4, 1, 5, -3, 3, 1048581, -2, 3, 1048581, -1, 3, 1048581, -65536, 3, 1048581, -65535, 3, 1048581, -65533, 2, 655365, -65533, 1, 655365, -65533, 0, 655365, -65533, 65535, 655365, -65533, 65534, 655365, -3, 65532, 1441797, -2, 65532, 1441797, -1, 65532, 1441797, -65536, 65532, 1441797, -65535, 65532, 1441797, -4, 65533, 5, -4, 2, 5, -65534, 3, 1048581, -65534, 65532, 1441797, -65533, 65533, 655365, -65533, 65532, 1441798, -65533, 3, 655366, -4, 3, 1048582, -4, 65532, 6, 0, 1, 0, 1, 1, 0, 1, 0, 0, 2, 0, 0, 65535, 1, 655361, 65534, 1, 655362, 65538, 0, 655362, 65539, 0, 655361, 65540, 0, 655360)
+}
+metadata/_editor_floor_ = Vector3(0, 1, 0)
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.93251, -0.361115, 0.00455019, -0.0372086, -0.0835365, 0.99581, -0.359222, -0.928772, -0.0913352, 3.2587, 3.43515, -0.122343)
 shadow_enabled = true
 
-[node name="Floor" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.256668, 0)
-metadata/_edit_group_ = true
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
-mesh = SubResource("1")
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
-shape = SubResource("2")
-
 [node name="Tux" parent="." instance=ExtResource("2_bi6wm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -6, 0.754152, 2)
 
 [node name="Blocks" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.34358)
@@ -59,4 +47,4 @@ transform = Transform3D(-0.0208041, -0.784697, 0.619531, 0.942325, -0.222435, -0
 transform = Transform3D(-0.0797952, -0.886872, 0.455072, 0.919082, 0.111281, 0.378029, -0.385904, 0.448413, 0.806228, 1.41472, 23.1726, -0.153419)
 
 [node name="Giant_Soap" parent="." instance=ExtResource("5_nm5ji")]
-transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 1.95874, 2.39381, 2.81413)
+transform = Transform3D(50, 0, 0, 0, 50, 0, 0, 0, 50, 1.95874, 3.34356, 2.81413)

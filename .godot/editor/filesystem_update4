@@ -1,8 +1,5 @@
 res://default_env.tres
 res://scenes/Level1.tscn
-res://Assets/Models/soap.res
-res://scenes/tux.tscn
-res://scenes/Block.tscn
 res://Resources/Level1_Environment.tres
-res://scenes/soap.gd
-res://scenes/tux.gd
+res://Assets/Models/soap.res
+res://Resources/world-blocks-v1.tres

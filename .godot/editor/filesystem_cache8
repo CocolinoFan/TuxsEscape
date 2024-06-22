@@ -1,12 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1719057671
+::res://::1719063677
 default_env.tres::Environment::2108205342659513610::1719056662::0::1::::<><>::
 icon.png::CompressedTexture2D::645056148065213026::1718624652::1718629274::1::::<><>::
 README.md::TextFile::-1::1718625759::0::1::::<><>::
 ::res://Assets/::1718824127
-::res://Assets/Models/::1719054590
+::res://Assets/Models/::1719063680
+world-block-v1_DiamondPlate008A_1K-JPG_Roughness.png::CompressedTexture2D::7811846931449443774::1719063679::1719063681::1::::<><>::
+world-block-v1_DiamondPlate008A_1K-JPG_NormalGL.jpg::CompressedTexture2D::5380979948611649906::1719063678::1719063681::1::::<><>::
 Soap.glb::PackedScene::814798179506543295::1719044584::1719044947::1::::<><>::
 soap.res::ArrayMesh::1887749155167162731::1719054590::0::1::::<><>::
+world-block-v1.glb::PackedScene::3598218852211859971::1719063152::1719063680::1::::<><>::uid://djkd8ie88pmda::::res://Assets/Models/world-block-v1_DiamondPlate008A_1K-JPG_Roughness.png<>uid://ciwt7olu14jd7::::res://Assets/Models/world-block-v1_DiamondPlate008A_1K-JPG_NormalGL.jpg
 ::res://Resources/::1719054644
 Level1_Environment.tres::Environment::7022012744118693660::1719054644::0::1::::<><>::
 ::res://scenes/::1719056662
