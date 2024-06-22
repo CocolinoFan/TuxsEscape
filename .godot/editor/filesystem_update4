@@ -1,4 +1,7 @@
 res://default_env.tres
 res://scenes/Level1.tscn
-res://scenes/fish.tscn
-res://scenes/soap.tscn
+res://Assets/Models/soap.res
+res://scenes/tux.tscn
+res://scenes/Block.tscn
+res://Resources/Level1_Environment.tres
+res://scenes/soap.gd
