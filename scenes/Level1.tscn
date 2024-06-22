@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://b248b6c0l0krn" path="res://scenes/tux.tscn" id="2_bi6wm"]
 [ext_resource type="Texture2D" uid="uid://jgp8lqffp4hy" path="res://icon.png" id="3_qqv7a"]
 [ext_resource type="Script" path="res://scenes/Icon.gd" id="4_0dsa0"]
-[ext_resource type="PackedScene" uid="uid://xxfwyro6hjqd" path="res://scenes/fish.tscn" id="5_nm5ji"]
+[ext_resource type="PackedScene" uid="uid://xxfwyro6hjqd" path="res://scenes/soap.tscn" id="5_nm5ji"]
 
 [sub_resource type="BoxMesh" id="1"]
 size = Vector3(10, 0.5, 10)
@@ -15,7 +15,7 @@ size = Vector3(10, 0.5, 10)
 [node name="Level1" type="Node3D"]
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 3, 13.4436)
+transform = Transform3D(1, 0, 0, 0, 0.9355, 0.353328, 0, -0.353328, 0.9355, 0, 2.08386, 7.15546)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.84952, -0.365939, 0.380005, 0.13497, 0.847098, 0.514012, -0.509998, -0.385374, 0.769018, 12, 8.9845, 10.7615)
@@ -40,19 +40,19 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 transform = Transform3D(0.866025, -0.5, 0, 0.482963, 0.836516, 0.258819, -0.12941, -0.224144, 0.965926, 0, 12, 0)
 
 [node name="Block2" parent="Blocks" instance=ExtResource("1")]
-transform = Transform3D(0.866025, -0.5, 0, 0.372033, 0.644381, -0.668105, 0.334053, 0.578596, 0.744067, -0.896209, 16.6908, 0)
+transform = Transform3D(0.866025, -0.5, 0, 0.372033, 0.644381, -0.668105, 0.334053, 0.578596, 0.744067, -2.66331, 14.0989, 0.140951)
 
 [node name="Block3" parent="Blocks" instance=ExtResource("1")]
 transform = Transform3D(0.866025, -0.5, 0, 0.43565, 0.754567, -0.490752, 0.245376, 0.425003, 0.8713, 1.90898, 14.9486, 0)
 
 [node name="Block4" parent="Blocks" instance=ExtResource("1")]
-transform = Transform3D(-0.123668, -0.962863, -0.240002, 0.983849, -0.150513, 0.0968841, -0.12941, -0.224144, 0.965926, 2.24308, 20.2987, -0.153419)
+transform = Transform3D(-0.123668, -0.962863, -0.240002, 0.983849, -0.150513, 0.0968841, -0.12941, -0.224144, 0.965926, 2.94706, 20.2987, -2.35477)
 
 [node name="Block5" parent="Blocks" instance=ExtResource("1")]
-transform = Transform3D(-0.0208041, -0.784697, 0.619531, 0.942325, -0.222435, -0.250093, 0.334053, 0.578596, 0.744067, -2.44214, 21.2235, -0.153419)
+transform = Transform3D(-0.0208041, -0.784697, 0.619531, 0.942325, -0.222435, -0.250093, 0.334053, 0.578596, 0.744067, -1.54677, 21.2235, -2.22715)
 
 [node name="Block6" parent="Blocks" instance=ExtResource("1")]
-transform = Transform3D(-0.0797952, -0.886872, 0.455072, 0.919082, 0.111281, 0.378029, -0.385904, 0.448413, 0.806228, 0.223454, 23.1726, -0.153419)
+transform = Transform3D(-0.0797952, -0.886872, 0.455072, 0.919082, 0.111281, 0.378029, -0.385904, 0.448413, 0.806228, 1.41472, 23.1726, -0.153419)
 
 [node name="Icon" type="Sprite3D" parent="."]
 transform = Transform3D(0.710099, 0, -0.704102, 0, 1, 0, 0.704102, 0, 0.710099, 2.99254, 0.307575, 3.49756)
