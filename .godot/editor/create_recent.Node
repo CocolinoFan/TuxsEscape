@@ -1,11 +1,11 @@
+CollisionShape3D
+Area3D
 RayCast3D
 MeshInstance3D
 GridMap
 Node3D
 Camera3D
 WorldEnvironment
-CollisionShape3D
-Area3D
 Sprite3D
 ColorPicker
 CharacterBody3D

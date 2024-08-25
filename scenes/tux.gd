@@ -64,3 +64,7 @@ func align_with_floor(floor_normal):
 	xform.basis = xform.basis.orthonormalized()
 
 #Remeber to credit Larry lewing@isc.tamu.edu for makeing the tux image
+
+
+func _on_fall_zone_body_entered(body):
+	get_tree().change_scene_to_file("res://scenes/Level1.tscn")
