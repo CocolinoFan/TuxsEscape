@@ -9,6 +9,7 @@ height = 0.0528765
 
 [node name="Soap" type="Area3D"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
+collision_layer = 4
 script = ExtResource("1_rlx1p")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
